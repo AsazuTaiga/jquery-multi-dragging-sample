@@ -1,10 +1,10 @@
-"use strict";
+'use strict';
 
 $(() => {
-    // draggableの設定
+    // set draggable to main
     $("#main-draggable").draggable({
         drag(event, ui) {
-            // dragの際に、一緒に動かす
+            // move subs
             $('.sub').css(ui.position);
         }
     });
